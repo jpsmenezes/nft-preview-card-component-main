@@ -17,6 +17,32 @@
       margin: 0;
       box-sizing: border-box;
 }
+html{      
+      /*Cada 1rem será considerado 10px*/
+      font-size: 62.5%;
+ }
 body{
       background-color: var(--Very-dark-blue);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.6rem;
+}
+section.container{
+      max-width: 35.5rem;      
+      background-color:var(--Very-dark-blue2);
+      padding: 2rem;
+      border-radius: 1rem;
+}
+section.container .img{
+      display: flex;
+      justify-content: center;            
+}
+section.container .img img{
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
 }
