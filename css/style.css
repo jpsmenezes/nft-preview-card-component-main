@@ -3,7 +3,7 @@
 :root{
 
 /*/// Primary //////////////////*/
---Soft-blue: hsl(215, 51%, 70%);
+--Soft-blue: hsla(215, 52%, 70%, 0.589);
 --Cyan: hsl(178, 100%, 50%);
 
 /*/// Neutral //////////////////*/
@@ -45,4 +45,31 @@ section.container .img img{
       width: 100%;
       height: auto;
       border-radius: 1rem;
+}
+.content header{
+      margin: 3rem 0 2rem;
+}
+.content header h1{
+      color: var(--White);
+      font-size: 2.4rem;      
+      font-weight: 600;
+}
+.content main p{
+      color: var(--Soft-blue);
+      font-weight: 400;
+      font-size: 1.8rem;
+}
+.content main div{
+      display: flex;
+      justify-content: space-between;
+      padding: 2.5rem 0;
+}
+.content main div span{
+      color: #fff;
+      font-weight: 600;
+
+}
+.content main div span + span{
+      color:var(--Cyan);
+      font-weight: 400;
 }
