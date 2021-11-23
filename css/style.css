@@ -65,11 +65,50 @@ section.container .img img{
       padding: 2.5rem 0;
 }
 .content main div span{
-      color: #fff;
+      color:var(--Cyan);
       font-weight: 600;
 
 }
 .content main div span + span{
-      color:var(--Cyan);
+      color:var(--Soft-blue);
       font-weight: 400;
+}
+.content main div span::before{
+      content: url(../images/icon-ethereum.svg);
+      position: relative;
+      margin-right: 1rem;
+      top: 0.3rem;
+      
+}
+.content main div span + span::before{
+      content: url(../images/icon-clock.svg);
+}
+.content hr{
+      background-color: var(--Very-dark-blue3);
+      width: 100%;
+      height: 1px;
+      border: none;
+}
+footer{
+      display: flex; 
+      align-items: center;
+      color: var();
+}
+footer img{
+      width: 4rem;
+      height: auto;      
+      border: 1px solid white;
+      border-radius: 50%;
+      margin: 2rem 0;
+
+}
+footer address{
+      font-style: normal;
+      margin-left: 1rem;
+      color: var(--Soft-blue);
+}
+footer address mark{
+      background-color: rgba(255, 255, 255, 0);
+      color: var(--White);
+      margin-left: 0.5rem;
 }
