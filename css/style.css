@@ -40,7 +40,12 @@ section.container{
 }
 section.container .img{
       display: flex;
-      justify-content: center;            
+      position: relative;
+      justify-content: center;  
+      align-items: center;
+      background-color: var(--Cyan);   
+      border-radius: 1rem;   
+      cursor: pointer;    
 }
 section.container .img img{
       width: 100%;
@@ -50,7 +55,8 @@ section.container .img img{
 .content header{
       margin: 3rem 0 2rem;
 }
-.content header h1{
+.content header a{
+      text-decoration: none;
       color: var(--White);
       font-size: 2.4rem;      
       font-weight: 600;
@@ -116,3 +122,20 @@ footer address a{
       margin-left: 0.5rem;
       text-decoration: none;
 }
+/* hovers //////////////////////////////////////////*/
+.content header a:hover,
+footer address a:hover{
+      color: var(--Cyan);
+}
+section.container .img img:hover{           
+      filter: opacity(0.5) contrast(1.2) brightness(100%);
+}
+/*aplicando um hover a um after*/
+section.container .img:hover:after{
+      content: url(../images/icon-view.svg);      
+      position: absolute;
+}
+section.container .img:visited:after{
+      display: none;
+}
+
