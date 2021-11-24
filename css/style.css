@@ -61,33 +61,33 @@ section.container .img img{
       font-size: 2.4rem;      
       font-weight: 600;
 }
-.content main p{
+.content section p{
       color: var(--Soft-blue);
       font-weight: 400;
       font-size: 1.8rem;
 }
-.content main div{
+.content section div{
       display: flex;
       justify-content: space-between;
       padding: 2.5rem 0;
 }
-.content main div span{
+.content section div span{
       color:var(--Cyan);
       font-weight: 600;
 
 }
-.content main div span + span{
+.content section div span + span{
       color:var(--Soft-blue);
       font-weight: 400;
 }
-.content main div span::before{
+.content section div span::before{
       content: url(../images/icon-ethereum.svg);
       position: relative;
       margin-right: 1rem;
       top: 0.3rem;
       
 }
-.content main div span + span::before{
+.content section div span + span::before{
       content: url(../images/icon-clock.svg);
 }
 .content hr{
